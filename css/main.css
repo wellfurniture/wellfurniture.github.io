@@ -62,6 +62,10 @@ hr.small {
   padding: 15px inherit;
 }
 
+.blog-post {
+  font-family: "Noto Sans KR";
+}
+
 .hideme {
   display: none;
 }
