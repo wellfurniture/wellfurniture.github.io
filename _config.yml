@@ -25,12 +25,13 @@ navbar-links:
     - 오늘의 집: "https://ohou.se/brands/home?query=%EC%9B%B0%ED%8D%BC%EB%8B%88%EC%B3%90"
     - 지마켓: "http://minishop.gmarket.co.kr/WellFurniture"
     - 옥션: "http://stores.auction.co.kr/btbone"
+    - 쿠팡: "https://link.coupang.com/re/VENDORS?pageKey=A00127498&lptag=A00127498"
   Story: "story"
   Contact: "contact"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-# avatar: "/img/avatar-icon.png"
+# avatar: "/img/avatar-icon.png"zn
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
