@@ -11,7 +11,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 100px 80px;
+	padding: 100px 0px;
 	font-family: "Noto Sans KR";
 }
 
@@ -43,6 +43,7 @@ section hr {
 
 section ul {
 	list-style: none;
+	padding: 0;
 }
 
 .hero {
@@ -109,16 +110,37 @@ section a.btn {
 	}
 }
 
-.how-we-do .grid {
+.grid {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
+.what-we-do .grid li {
+	padding: 20px;
+	flex-basis: 33%;
+	text-align: center;
+}
+.what-we-do p {
+	width: 100%;
+	text-align: left;
+}
+
+@media (max-width: 800px) {
+	.what-we-do .grid li {
+		flex-basis: 100%;
+		padding: 20px;
+	}
+}
+
+.what-we-do img {
+	border: 1px solid #aaa;
+}
+
 .how-we-do .grid li {
 	padding: 50px;
-	flex-basis: 50%;
+	flex-basis: 33%;
 	text-align: center;
 }
 
@@ -138,48 +160,30 @@ section a.btn {
 	}
 }
 
-.what-others-say .quote {
-	font-size: 22px;
-	font-weight: 300;
-	line-height: 1.5;
-	margin: 40px 0 25px;
+.what-others-say p {
+	text-align: left;
+	padding: 0px;
+}
+
+.what-others-say .box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 50%;
+}
+.what-others-say img {
+	max-width: 100%;
+}
+.what-others-say .box-desc {
+	padding: 0 30px;
 }
 
 @media (max-width: 800px) {
-	.what-others-say .quote {
-		font-size: 18px;
-		margin: 15px 0;
-	}
-
-	.what-others-say .author {
-		font-size: 14px;
-	}
-}
-
-.learn-more form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	width: 60%;
-}
-
-.learn-more form .btn {
-	padding: 18px 42px;
-}
-
-.learn-more form input {
-	padding: 15px;
-	margin-right: 30px;
-	font-size: 18px;
-	color: #555;
-	flex: 1;
-}
-
-@media (max-width: 1000px) {
-	.learn-more form input {
+	.what-others-say .box {
 		flex-basis: 100%;
-		margin: 0 0 20px 0;
+		padding: 20px;
+	}
+	.what-others-say .box-desc {
+		padding: 0px;
 	}
 }
 </style>
@@ -187,80 +191,86 @@ section a.btn {
 <section class="hero">
 	<div class="background-image" style="background-image: url({{ site.intro.bgimg }});"></div>
   <div class="hero-content-area">
-    <h1>Well Furniture</h1>
-    <h3>Well Made Well Furniture for Better Life</h3>
-    <a href="/contact" class="btn">Contact Us Now</a>
+    <h1>WELL FURNUTURE</h1>
+    <h3>누구나 합리적인 가격으로 좋은 재질의 가구를 사용할 수 있게</h3>
+    <a href="#" class="btn">구매하러가기</a>
 </section>
 
 <section class="what-we-do">
-  <h3 class="title">What We Do:</h3>
-  <p>
-	  당신의 삶의 공간, 웰퍼니처가 함께 합니다
-  </p>
-  <hr>
-  <img src="{{ site.intro.what-we-do }}"/>
+  <h3 class="title">
+	  PRODUCT
+  </h3>
+  <ul class="grid">
+    <li>
+      <a href="{{ site.url }}/sofa"><img src="/img/sofa.jpg"/></a>
+      <p>
+	      소파<br/>
+	      <a href="{{ site.url }}/sofa">자세히보기</a>
+      </p>
+    </li>
+    <li>
+      <a href="{{ site.url }}/bed"><img src="/img/bed.jpg"/></a>
+      <p>
+	      침대<br/>
+	      <a href="{{ site.url }}/bed">자세히보기</a>
+      </p>
+    </li>
+    <li>
+      <a href="{{ site.url }}/mattress"><img src="/img/mattress.jpg"/></a>
+      <p>
+	      매트리스<br/>
+	      <a href="{{ site.url }}/mattress">자세히보기</a>
+      </p>
+    </li>
 </section>
 
 <section class="how-we-do">
-  <h3 class="title">How We Do:</h3>
-  <p>
-	  위생, 친환경, 애정, 과학, 그리고 신뢰
-  </p>
-  <hr>
+  <h3 class="title">ABOUT 웰퍼니쳐</h3>
   <ul class="grid">
     <li>
-      <i class="fa fa-compass fa-4x"></i>
-      <h4>품질</h4>
+      <img src="/img/icon-quality.jpg"/>
+      <h4>좋은품질</h4>
       <p>
-	      가격을 낮추기 위해 노력하지 않았습니다.
-	      효과적인 재료를 효율적인 방법으로 가공하는 방법을 찾으려 노력했습니다.
-	      제품이 고객에게 전달되기까지 합리적인 방식을 고민했습니다.
+	      각 기관에서 인증받은 좋은 재료를 효율적으로 이용한 가구
       </p>
     </li>
     <li>
-      <i class="fa fa-camera-retro fa-4x"></i>
-      <h4>조화</h4>
+      <img src="/img/icon-price.jpg"/>
+      <h4>합리적인 가격</h4>
       <p>
-	      웰퍼니처는 사랑입니닼ㅋ
+	      브랜드라서 비싼 가구가 아닌 누구나 합리적인 가격으로 구매할 수 있는
       </p>
     </li>
     <li>
-      <i class="fa fa-bicycle fa-4x"></i>
-      <h4>완전배송</h4>
+      <img src="/img/icon-shipping.jpg"/>
+      <h4>안전한 배송</h4>
       <p>
-	      지역별로 전담 기사님이 신속하고 안전하게 배송안내부터 설치까지
-      </p>
-    </li>
-    <li>
-      <i class="fa fa-flag-checkered fa-4x"></i>
-      <h4>가치</h4>
-      <p>
-	      당신이 구매하는 것은 장인의 손길이 닿은 가구만이 아닙니다.
-	      당신이 꿈꾸는 삶은 우리가 꿈꾸는 공간 속에 다시 태동할 것입니다.
+	      각 지역별로 전담기사님께서 안전하게 직접 배송 및 설치
       </p>
     </li>
   </ul>
 </section>
 
 <section class="what-others-say">
-  <h3 class="title">제품후기:</h3>
-  <hr>
-  <p class="quote">와~ 대단해요. 공간이 바뀌자 삶의 질이 달라졌어요.</p>
-  <p class="author">- 홍길동</p>
-  <p class="quote">어쩌구 저쩌구 <em>우하하</em> 입니다!</p>
-  <p class="author">- 이시원</p>
-  <p class="quote">"똥물에 적셨다네~"</p>
-  <p class="author">- 강혜선(진상고객)</p>
-</section>
-
-<section class="learn-more">
-  <h3 class="title">웰소식 구독하기</h3>
-  <p>
-	  이메일 주소를 입력하시면 웰퍼니쳐 소식과 쿠폰 및 이벤트 정보를 받아보실 수 있습니다. 웰득
-  </p>
-  <hr>
-  <form>
-    <input type="email" placeholder="Email">
-    <a href="#" class="btn">Subscribe now</a>
-  </form>
+  <div class="box">
+    <div>
+      <img style="border:1px solid #aaa;" src="/img/booking.jpg"/>
+    </div>
+    <div class="box-desc">
+      <h3>에이든 소파 체험</h3>
+        <p>
+  	  웰퍼니쳐는 현재 온라인으로만 판매를 진행하고 있지만<br/>
+	  많은 분들의 관심과 성원에 힘입어 에이든 소파를<br/>
+	  사무실에서 체험하실 수 있도록 준비했습니다. <br/>
+        </p>
+        <p>
+	  에이든 소파 체험과 더불어 다른 제품들에 대해<br/>
+	  궁금하셨던 점들도 해소하실 수 있습니다.<br/>
+        </p>
+        <p>
+	  사무실 내방은 예약으로만 진행되는 점 양해부탁드립니다.<br/>
+	  아래 번호로 연락주셔서 예약해주시면 감사하겠습니다.
+        </p>
+    </div>
+  </div>
 </section>
