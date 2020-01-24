@@ -4,7 +4,7 @@
 title: 웰퍼니처
 
 # Short description of your site
-description: 당신의 삶의 공간, 웰퍼니처가 함께 합니다. 가구, 침대, 소파
+description: 당신의 삶의 공간, 웰퍼니처가 함께 합니다. 가구, 침대, 소파, 매트리스
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -20,14 +20,21 @@ description: 당신의 삶의 공간, 웰퍼니처가 함께 합니다. 가구, 
 
 # List of links in the navigation bar
 navbar-links:
-  Store:
+  스토어:
     - 네이버: "https://smartstore.naver.com/wellfurniture"
     - 오늘의 집: "https://ohou.se/brands/home?query=%EC%9B%B0%ED%8D%BC%EB%8B%88%EC%B3%90"
     - 지마켓: "http://minishop.gmarket.co.kr/WellFurniture"
     - 옥션: "http://stores.auction.co.kr/btbone"
     - 쿠팡: "https://link.coupang.com/re/VENDORS?pageKey=A00127498&lptag=A00127498"
-  Story: "story"
-  Contact: "contact"
+  브랜드:
+    - CEO인사말: "greetings"
+    - 비전: "vision"
+    - 연혁: "story"
+    - 문화: "culture"
+    - 조직도: "group"
+    - 오시는길: "directions"
+    - CI: "ci"
+  체험예약: "contact"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -69,8 +76,7 @@ author:
   copy: 당신의 삶의 공간, 웰퍼니처가 함께 합니다.
 
 intro:
-  bgimg: https://coolmaterial.com/wp-content/uploads/2015/03/tuft-needle-matress.jpg
-  what-we-do: https://thumbnail14.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/4872/ee4c858f61835e5e05640ce96a684af932bd73ebb8afc4cebd2691e6a656.jpg
+  bgimg: /img/bg-main.jpg
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
